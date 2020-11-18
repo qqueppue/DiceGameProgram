@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dices.ico') }}">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <!--<h1>Refresh Me</h1>-->
+      <h2>🎲DICE GAME🎲</h2>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="">
+      </div>
+
+      <h2>{{ response }}</h2>
+      <p>result is {{ win }}</p>
+    </div>
+    
+  </body>
+  <!-- 제이쿼리 링크 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <!-- 자바스크립트 -->
+  <script src="static/app.js"></script>
+  <footer>
+      &copy; 2020 . hansilver. co. kr 
+  </footer>
+</html>
